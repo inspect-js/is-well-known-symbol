@@ -1,0 +1,29 @@
+{
+	"name": "is-well-known-symbol",
+	"version": "0.0.0",
+	"description": "Is this value a well-known Symbol?",
+	"main": "index.js",
+	"exports": {
+		".": "./index.js",
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/inspect-js/is-well-known-symbol.git"
+	},
+	"keywords": [
+		"javascript",
+		"ecmascript",
+		"symbol",
+		"well-known"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/inspect-js/is-well-known-symbol/issues"
+	},
+	"homepage": "https://github.com/inspect-js/is-well-known-symbol#readme"
+}
