@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.1](https://github.com/inspect-js/is-well-known-symbol/compare/v1.0.0...v1.0.1) - 2022-07-20
+
+### Commits
+
+- [meta] use `npmignore` to autogenerate an npmignore file [`3a4d609`](https://github.com/inspect-js/is-well-known-symbol/commit/3a4d609eb30b9cd6b8c7ef065e01f40e633c595c)
+- [Fix] `IntlFallbackSymbol` is not a well-known symbol, reconfirmed per 2022.07.20 TC39 [`c21d3b1`](https://github.com/inspect-js/is-well-known-symbol/commit/c21d3b18b46311e6643f673147cf5dd6bc7c9de1)
+- [eslint] fix linting errors [`afdfdcb`](https://github.com/inspect-js/is-well-known-symbol/commit/afdfdcbe2b70dc3a8f5d783edb99783dfe86a1fb)
+- [Dev Deps] update `es-value-fixtures`, `object-inspect` [`25a96d7`](https://github.com/inspect-js/is-well-known-symbol/commit/25a96d73b1acaa2fdbaa79dc3e5727cbd813d2e3)
+
 ## v1.0.0 - 2022-04-25
 
 ### Commits
