@@ -3,6 +3,12 @@
 
 	"extends": "@ljharb",
 
-	"rules": {
-	},
+	"overrides": [
+		{
+			"files": ["test/**/*"],
+			"rules": {
+				"max-lines-per-function": "off",
+			},
+		},
+	],
 }
