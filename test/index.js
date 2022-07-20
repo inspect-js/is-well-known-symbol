@@ -5,6 +5,7 @@ var forEach = require('for-each');
 var hasSymbols = require('has-symbols')();
 var inspect = require('object-inspect');
 var v = require('es-value-fixtures');
+var IntlFallbackSymbol = require('intl-fallback-symbol');
 
 var isWellKnownSymbol = require('../');
 
@@ -58,7 +59,15 @@ test('isWellKnownSymbol', function (t) {
 			);
 		});
 
-		st.test('Intl Fallback Symbol', { skip: typeof Intl !== 'object' || typeof Intl.DateTimeFormat });
+		st.test('Intl Fallback Symbol', { skip: !IntlFallbackSymbol }, function (s2t) {
+			s2t.equal(
+				isWellKnownSymbol(IntlFallbackSymbol),
+				false,
+				'IntlFallbackSymbol is not a well-known symbol'
+			);
+
+			s2t.end();
+		});
 
 		st.end();
 	});
