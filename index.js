@@ -8,6 +8,7 @@ var callBound = require('call-bound');
 
 var symbolValueOf = callBound('Symbol.prototype.valueOf', true);
 
+/** @type {import('.') | undefined} */
 var result;
 
 if (hasSymbols) {
@@ -15,16 +16,18 @@ if (hasSymbols) {
 		ownKeys(Symbol),
 		function (k) {
 			var v = Symbol[k];
-			return typeof v === 'symbol' ? v : [];
+			// eslint-disable-next-line no-extra-parens
+			return typeof v === 'symbol' ? /** @type {[import('.').WellKnownSymbol]} */ (/** @type {unknown} */ (v)) : [];
 		}
 	);
 
+	/** @type {{ __proto__: null } & { [k in import('.').WellKnownSymbol]?: true }} */
 	var map = { __proto__: null };
 	for (var i = 0; i < wellKnownSymbols.length; i += 1) {
 		map[wellKnownSymbols[i]] = true;
 	}
 
-	result = function isWellKnownSymbol(sym) {
+	result = /** @type {import('.')} */ function isWellKnownSymbol(sym) {
 		if (!isSymbol(sym)) {
 			return false;
 		}
@@ -32,9 +35,10 @@ if (hasSymbols) {
 	};
 } else {
 	// eslint-disable-next-line no-unused-vars
-	result = function isWellKnownSymbol(sym) {
+	result = /** @type {import('.')} */ function isWellKnownSymbol(_sym) {
 		return false;
 	};
 }
 
+/** @type {import('.')} */
 module.exports = result;
