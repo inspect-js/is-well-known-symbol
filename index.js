@@ -8,27 +8,33 @@ var callBound = require('call-bound');
 
 var symbolValueOf = callBound('Symbol.prototype.valueOf', true);
 
-var wellKnownSymbols = hasSymbols && flatMap(
-	ownKeys(Symbol),
-	function (k) {
-		var v = Symbol[k];
-		return typeof v === 'symbol' ? v : [];
+var result;
+
+if (hasSymbols) {
+	var wellKnownSymbols = hasSymbols && flatMap(
+		ownKeys(Symbol),
+		function (k) {
+			var v = Symbol[k];
+			return typeof v === 'symbol' ? v : [];
+		}
+	);
+
+	var map = { __proto__: null };
+	for (var i = 0; i < wellKnownSymbols.length; i += 1) {
+		map[wellKnownSymbols[i]] = true;
 	}
-);
 
-var map = { __proto__: null };
-for (var i = 0; i < wellKnownSymbols.length; i += 1) {
-	map[wellKnownSymbols[i]] = true;
-}
-
-module.exports = hasSymbols
-	? function isWellKnownSymbol(sym) {
+	result = function isWellKnownSymbol(sym) {
 		if (!isSymbol(sym)) {
 			return false;
 		}
 		return (typeof sym === 'symbol' ? sym : symbolValueOf(sym)) in map;
-	}
+	};
+} else {
 	// eslint-disable-next-line no-unused-vars
-	: function isWellKnownSymbol(sym) {
+	result = function isWellKnownSymbol(sym) {
 		return false;
 	};
+}
+
+module.exports = result;
