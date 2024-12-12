@@ -4,7 +4,7 @@ var hasSymbols = require('has-symbols')();
 var isSymbol = require('is-symbol');
 var flatMap = require('array.prototype.flatmap');
 var ownKeys = require('reflect.ownkeys');
-var callBound = require('call-bind/callBound');
+var callBound = require('call-bound');
 
 var symbolValueOf = callBound('Symbol.prototype.valueOf', true);
 

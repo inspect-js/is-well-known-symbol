@@ -41,7 +41,7 @@
 	"homepage": "https://github.com/inspect-js/is-well-known-symbol#readme",
 	"dependencies": {
 		"array.prototype.flatmap": "^1.3.2",
-		"call-bind": "^1.0.8",
+		"call-bound": "^1.0.2",
 		"has-symbols": "^1.1.0",
 		"is-symbol": "^1.1.0",
 		"reflect.ownkeys": "^1.1.4"
