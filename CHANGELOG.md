@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.1](https://github.com/inspect-js/is-well-known-symbol/compare/v1.1.0...v1.1.1) - 2024-12-19
+
+### Commits
+
+- [Refactor] use 1 iteration instead of 2; drop flatmap dep [`c1f8dd3`](https://github.com/inspect-js/is-well-known-symbol/commit/c1f8dd3bdb2f19a8c136e183dd32c52711f00039)
+- [Deps] update `array.prototype.flatmap`, `call-bound`, `is-symbol` [`388ff14`](https://github.com/inspect-js/is-well-known-symbol/commit/388ff140a415dcdfa04b0cd21872a83e6da59150)
+- [Dev Deps] update `@types/tape`, `intl-fallback-symbol` [`6f1e193`](https://github.com/inspect-js/is-well-known-symbol/commit/6f1e19303c6bf0ee1d0cdcef0a105270f068c3f3)
+- [Refactor] throw if hasSymbols, but no valueOf exists [`cebb825`](https://github.com/inspect-js/is-well-known-symbol/commit/cebb82582d82720b9cafb1d625b4f254819d67a3)
+- [meta] add `sideEffects` flag [`a0d5ebc`](https://github.com/inspect-js/is-well-known-symbol/commit/a0d5ebca7a558beda1b849f27b0734ade738a177)
+
 ## [v1.1.0](https://github.com/inspect-js/is-well-known-symbol/compare/v1.0.1...v1.1.0) - 2024-12-18
 
 ### Commits
