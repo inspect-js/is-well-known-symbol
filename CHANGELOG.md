@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.0](https://github.com/inspect-js/is-well-known-symbol/compare/v1.0.1...v1.1.0) - 2024-12-18
+
+### Commits
+
+- [New] add types [`c5da9e2`](https://github.com/inspect-js/is-well-known-symbol/commit/c5da9e23d4239a922a5f21eed5a30885a1444297)
+- [Refactor] allow more code to be DCEd [`bccfc93`](https://github.com/inspect-js/is-well-known-symbol/commit/bccfc9386aba5546cce08b0572fcd9461ab8fbf1)
+- [actions] split out node 10-20, and 20+ [`43d091b`](https://github.com/inspect-js/is-well-known-symbol/commit/43d091bf9541f8c85dce73300f7ad0f3568b2e6c)
+- [Dev Deps] update `@ljharb/eslint-config`, `auto-changelog`, `es-value-fixtures`, `intl-fallback-symbol`, `npmignore`, `object-inspect`, `tape` [`cbc222b`](https://github.com/inspect-js/is-well-known-symbol/commit/cbc222b30f44e169e71411b9aaa699e7af907212)
+- [actions] update rebase action to use reusable workflow [`9301f1f`](https://github.com/inspect-js/is-well-known-symbol/commit/9301f1fc352415fcd85d52c13753cc7a7c0428ef)
+- [Deps] update `array.prototype.flatmap`, `call-bind`, `has-symbols`, `is-symbol`, `reflect.ownkeys` [`00e32b0`](https://github.com/inspect-js/is-well-known-symbol/commit/00e32b093dfe488af8291325d40d89e32206d59f)
+- [Refactor] use `call-bound` directly [`359991a`](https://github.com/inspect-js/is-well-known-symbol/commit/359991ae10783cd9a0434d24d67c8596f49cedc6)
+- [Dev Deps] update `aud`, `tape` [`b96f3e5`](https://github.com/inspect-js/is-well-known-symbol/commit/b96f3e5d703b87c6248d95b3c36830611d2542f9)
+- [Tests] replace `aud` with `npm audit` [`0cbce69`](https://github.com/inspect-js/is-well-known-symbol/commit/0cbce69cb0983e37f1e3a9e6270f9d25ea2df1c4)
+- [Dev Deps] add missing peer dep [`d831357`](https://github.com/inspect-js/is-well-known-symbol/commit/d8313577f725d32fd33e727bfbba56558d4e5713)
+
 ## [v1.0.1](https://github.com/inspect-js/is-well-known-symbol/compare/v1.0.0...v1.0.1) - 2022-07-20
 
 ### Commits
