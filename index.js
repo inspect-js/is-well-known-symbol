@@ -6,12 +6,11 @@ var flatMap = require('array.prototype.flatmap');
 var ownKeys = require('reflect.ownkeys');
 var callBound = require('call-bound');
 
-var symbolValueOf = callBound('Symbol.prototype.valueOf', true);
-
 /** @type {import('.') | undefined} */
 var result;
 
 if (hasSymbols) {
+	var symbolValueOf = callBound('Symbol.prototype.valueOf');
 	var wellKnownSymbols = hasSymbols && flatMap(
 		ownKeys(Symbol),
 		function (k) {
