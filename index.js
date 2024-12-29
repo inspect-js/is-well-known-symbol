@@ -2,7 +2,7 @@
 
 var hasSymbols = require('has-symbols')();
 var isSymbol = require('is-symbol');
-var ownKeys = require('reflect.ownkeys');
+var ownKeys = require('own-keys');
 var callBound = require('call-bound');
 
 /** @type {import('.') | undefined} */
