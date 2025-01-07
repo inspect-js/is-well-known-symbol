@@ -45,7 +45,7 @@
 		"call-bound": "^1.0.3",
 		"has-symbols": "^1.1.0",
 		"is-symbol": "^1.1.1",
-		"own-keys": "^1.0.0"
+		"own-keys": "^1.0.1"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.17.2",
