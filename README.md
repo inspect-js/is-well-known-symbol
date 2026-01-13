@@ -42,5 +42,5 @@ Simply clone the repo, `npm install`, and run `npm test`
 [downloads-url]: https://npm-stat.com/charts.html?package=is-well-known-symbol
 [codecov-image]: https://codecov.io/gh/inspect-js/is-well-known-symbol/branch/main/graphs/badge.svg
 [codecov-url]: https://app.codecov.io/gh/inspect-js/is-well-known-symbol/
-[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/inspect-js/is-well-known-symbol
+[actions-image]: https://img.shields.io/github/check-runs/inspect-js/is-well-known-symbol/main
 [actions-url]: https://github.com/inspect-js/is-well-known-symbol/actions
